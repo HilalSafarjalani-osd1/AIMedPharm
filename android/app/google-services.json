@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "688021011828",
+    "project_id": "medicinepharm-d6265",
+    "storage_bucket": "medicinepharm-d6265.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688021011828:android:31e056968716318bdc4021",
+        "android_client_info": {
+          "package_name": "com.example.medpharm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjR2d2qL2JMvr8Mu3Z3pPiVANCDPH_pHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

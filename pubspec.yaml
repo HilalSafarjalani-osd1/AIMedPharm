@@ -1,0 +1,103 @@
+name: medpharm
+description: "A smart AI pharmacist app using Gemini 2.5 Flash and ML Kit."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Localization (Arabic/English support)
+  flutter_localizations:
+    sdk: flutter
+
+  # UI Icons
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  provider: ^6.1.2
+  equatable: ^2.0.7
+
+  # Camera & Images
+  camera: ^0.11.0
+  image_picker: ^1.1.2
+
+  # Image Processing
+  image: ^4.3.0
+  
+  # Networking (For calling Gemini API)
+  http: ^1.2.2
+
+  # 🔥 Firebase Backend & AI
+  firebase_core: ^3.2.0
+  firebase_vertexai: ^1.1.0
+  firebase_auth: ^5.7.0
+  cloud_firestore: ^5.6.12
+
+  # 💰 Google AdMob (Existing)
+  google_mobile_ads: ^5.2.0
+
+  # 🌐 WebView (Required for Hsoub Ads) 👈👈 تمت الإضافة هنا
+  webview_flutter: ^4.9.0
+  url_launcher: ^6.3.1
+  
+  # AI & OCR (Offline Text Recognition)
+  google_mlkit_text_recognition: ^0.14.0
+
+  # Local Storage (For saving History)
+  shared_preferences: ^2.3.2
+
+  # 🗣️ Text to Speech
+  flutter_tts: ^4.1.0
+
+
+  # File Utilities
+  path_provider: ^2.1.5
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  
+  # 👇👇 Icon Generator Library 👇👇
+  flutter_launcher_icons: ^0.13.1
+
+  # 👇👇 Native Splash Library (للشاشة السريعة) 👇👇
+  flutter_native_splash: ^2.4.4
+
+# 🔥🔥🔥 الحل السحري لمشكلة تضارب النسخ 🔥🔥🔥
+dependency_overrides:
+  intl: ^0.20.1
+
+flutter:
+  uses-material-design: true
+
+  # 👇👇 Define Assets Folder 👇👇
+  assets:
+    - assets/
+    - assets/drug_icon.png
+
+# =========================================================
+# 🖼️ APP ICON CONFIGURATION (أيقونة التطبيق)
+# =========================================================
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/drug_icon.png"
+  min_sdk_android: 21
+
+# =========================================================
+# 🌊 NATIVE SPLASH CONFIGURATION (شاشة البداية السريعة)
+# =========================================================
+flutter_native_splash:
+  color: "#009688"               # خلفية
+  image: "assets/drug_icon.png"  # نفس الأيقونة
+  branding: "assets/drug_icon.png" # شعار في الأسفل (اختياري)
+  
+  android_12:                   # إعدادات أندرويد 12 وما فوق
+    image: "assets/drug_icon.png"
+    icon_background_color: "#009688"
